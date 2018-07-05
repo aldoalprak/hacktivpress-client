@@ -5,8 +5,10 @@
                 <h3>Home</h3> 
                 <div class="card hoverable small blue-grey darken-2" v-for="(article,index) in articles" :key="index">
                     <div class="card-content white-text">
+                        <span class="card-title">@{{article.userId.username}}</span>
                         <span class="card-title">{{article.title}}</span>
                         <p>{{article.content}}</p>
+                        <!-- <p>{{article.content}}</p> -->
                     </div>
                     <div class="card-action">
                         <div class="row">

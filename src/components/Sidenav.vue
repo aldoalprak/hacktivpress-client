@@ -14,6 +14,8 @@
             <li><router-link :to="'/'"><i class="material-icons">cloud</i>Hacktivpress Media</router-link></li>
             <li><div class="divider"></div></li>
             <li><a class="subheader">Category</a></li>
+            <li><a href @click="showByCategory()">tips</a></li>
+            <li><a href @click="showByCategory()">tutorial</a></li>
             
         </ul>
         <a href="#" data-target="slide-out" @click="sideNavJs()" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -53,6 +55,9 @@ export default {
         },
         login() {
             this.$router.push('/login')
+        },
+        showByCategory() {
+            
         }
     },
     computed:{

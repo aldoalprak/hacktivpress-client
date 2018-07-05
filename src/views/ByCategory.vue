@@ -2,7 +2,7 @@
   <div class="home">
     <Navbar/>
     <Sidenav/>
-    <MainArticle/>
+    <Category/>
     <div class="fixed-action-btn" v-if="adminStatus == true">
             <button @click="addArticle()" class="btn-floating btn-large waves-effect waves-light red lighten-2 pulse"><i class="material-icons">add</i></button> 
     </div>
@@ -13,14 +13,14 @@
 // @ is an alias to /src
 import Navbar from '@/components/Navbar.vue'
 import Sidenav from '@/components/Sidenav.vue'
-import MainArticle from '@/components/MainArticle.vue'
+import Category from '@/components/Category.vue'
 
 export default {
   name: 'home',
   components: {
     Navbar,
     Sidenav,
-    MainArticle
+    Category
   },
    data(){
     return {
